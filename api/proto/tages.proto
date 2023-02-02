@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package tages;
+
+option go_package = "./pb";
+
+service Tages {
+  rpc GettingPicture(AddPictureRequest)returns(AddPictureResponse){
+
+  };
+}
+
+message AddPictureRequest{
+  bytes image = 1;
+}
+
+message AddPictureResponse{
+
+}
